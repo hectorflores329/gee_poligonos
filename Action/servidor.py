@@ -53,7 +53,7 @@ def descarga():
     r1 = 0
     r2 = 500
         
-    for i in range(1):
+    for i in range(10):
 
         url = enlace + "?rango1=" + str(r1) + "&rango2=" + str(r2)
         print(url)
