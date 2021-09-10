@@ -17,6 +17,7 @@ def getDriver(enlace):
     driver = webdriver.Firefox(options=options)
     driver.set_page_load_timeout("60")
     driver.get(enlace)
+
     return driver
 
 def descargarDatos(url, r1, r2):
@@ -45,7 +46,7 @@ def descargarDatos(url, r1, r2):
     driver.close()
     
     myfile = requests.get(url)
-    open('..Files/' + str(r1) + ' - ' + str(r2) + '.csv', 'wb').write(myfile.content)
+    open('Files/' + str(r1) + ' - ' + str(r2) + '.csv', 'wb').write(myfile.content)
     
 def descarga():
 
