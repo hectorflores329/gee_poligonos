@@ -48,6 +48,12 @@ def descargarDatos(url, r1, r2):
     open('..Files/' + str(r1) + ' - ' + str(r2) + '.csv', 'wb').write(myfile.content)
     
 def descarga():
+    urlGecko = "https://github.com/hectorflores329/gecko/blob/main/geckodriver.exe"
+    wget.download(urlGecko, 'Files/geckodriver.exe')
+
+    time.sleep(30)
+
+    print("Gecko driver descargado")
 
     r1 = 0
     r2 = 500
